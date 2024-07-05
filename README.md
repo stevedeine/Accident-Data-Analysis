@@ -53,16 +53,8 @@ The models were evaluated based on precision, recall, F1-score, and overall accu
 Random Forest emerged as the superior model, providing an optimal balance between precision and recall, thus capturing true fatal cases while minimizing false positives. This model's ability to deliver reliable predictions makes it particularly valuable for implementing road safety measures aimed at preventing fatal outcomes.
 
 ## 7.0 Conclusion
-The series of experiments with the CNN model demonstrated the effectiveness of fine-tuning hyperparameters to enhance performance, achieving a maximum accuracy of 83%. These insights pave the way for future exploration of more sophisticated models and applications in image classification.
+Insights from this analysis are intended to aid governmental and related agencies in crafting effective and timely road safety strategies.
 
 ## 8.0 References
-1. Hiary, H., et al. (2018). "Flower classification using deep convolutional neural networks." *IET Computer Vision*, 12(6), 855-862.
-2. Singh, A., & Singh, P. (2020). "Image Classification: A Survey." *Journal of Informatics Electrical and Electronics Engineering*, 1(2), 1-9.
-
-## Figures
-- Figure 1: Histogram showcasing the baseline model performance.
-- Figure 2 to Figure 6: Various visualizations depicting accident trends and demographic distributions.
-
-## Appendices
-- Appendix A: Code snippets and methodologies used for data cleaning and analysis.
-- Appendix B: Additional tables and figures supporting detailed analysis.
+- Hiary, H., et al. (2018). "Flower classification using deep convolutional neural networks." *IET Computer Vision*, 12(6), 855-862.
+- Singh, A., & Singh, P. (2020). "Image Classification: A Survey." *Journal of Informatics Electrical and Electronics Engineering*, 1(2), 1-9.
