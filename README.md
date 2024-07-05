@@ -37,14 +37,27 @@ Outliers were identified but retained in the dataset to preserve potentially sig
 The study included various analyses such as the distribution of accidents by time, day, and under different environmental conditions. Peak accident times were identified during morning and late afternoon hours, with Fridays showing a higher incidence rate.
 
 ## 6.0 Predictive Modeling
-Advanced predictive models were developed to forecast fatal accidents, enhancing the ability to implement preemptive road safety measures.
+Advanced predictive models were developed to forecast fatal accidents. Various ensemble models were explored, including Random Forest, XGBoost, Gradient Boosting, and Balanced Bagging. These models are known for their effectiveness in handling imbalanced datasets, which is crucial for accurately predicting rare events like fatal accidents.
+
+### Model Evaluation Metrics
+The models were evaluated based on precision, recall, F1-score, and overall accuracy. The table below summarizes the performance of each model:
+
+### Table 5: Model Evaluation Metrics
+| Model Name          | Precision (Fatal) | Recall (Fatal) | F1-Score (Fatal) | Accuracy | Macro Avg F1 |
+|---------------------|-------------------|----------------|------------------|----------|--------------|
+| Gradient Boosting   | 0.06              | 0.58           | 0.11             | 0.83     | 0.51         |
+| Random Forest       | 0.86              | 0.59           | 0.70             | 0.99     | 0.70         |
+| XGBoost             | 0.17              | 0.42           | 0.24             | 0.95     | 0.61         |
+| Balanced Bagging    | 0.13              | 0.74           | 0.22             | 0.90     | 0.56         |
+
+Random Forest emerged as the superior model, providing an optimal balance between precision and recall, thus capturing true fatal cases while minimizing false positives. This model's ability to deliver reliable predictions makes it particularly valuable for implementing road safety measures aimed at preventing fatal outcomes.
 
 ## 7.0 Conclusion
-Insights from this analysis are intended to aid governmental and related agencies in crafting effective and timely road safety strategies.
+The series of experiments with the CNN model demonstrated the effectiveness of fine-tuning hyperparameters to enhance performance, achieving a maximum accuracy of 83%. These insights pave the way for future exploration of more sophisticated models and applications in image classification.
 
 ## 8.0 References
-- Hiary, H., et al. (2018). "Flower classification using deep convolutional neural networks." *IET Computer Vision*, 12(6), 855-862.
-- Singh, A., & Singh, P. (2020). "Image Classification: A Survey." *Journal of Informatics Electrical and Electronics Engineering*, 1(2), 1-9.
+1. Hiary, H., et al. (2018). "Flower classification using deep convolutional neural networks." *IET Computer Vision*, 12(6), 855-862.
+2. Singh, A., & Singh, P. (2020). "Image Classification: A Survey." *Journal of Informatics Electrical and Electronics Engineering*, 1(2), 1-9.
 
 ## Figures
 - Figure 1: Histogram showcasing the baseline model performance.
